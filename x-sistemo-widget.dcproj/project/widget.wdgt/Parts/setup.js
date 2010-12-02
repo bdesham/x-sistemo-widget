@@ -8,7 +8,8 @@ var dashcodePartSpecs = {
     "al_unikodo_button": { "creationFunction": "CreateButton", "leftImageWidth": 5, "onclick": "unikodoClickHandler", "rightImageWidth": 5, "text": "Al Unikodo" },
     "al_xsistemo_button": { "creationFunction": "CreateButton", "leftImageWidth": 5, "onclick": "xsistemoClickHandler", "rightImageWidth": 5, "text": "Al X-sistemo" },
     "star_text": { "text": "Hello, World!", "view": "DC.Text" },
-    "text": { "text": "1.0", "view": "DC.Text" }
+    "version_text": { "text": "1.0.2", "view": "DC.Text" }
 };
+
 
 

@@ -96,7 +96,7 @@ body {
     text-shadow: rgb(223, 223, 223) 1px 1px 2px;
 }
 
-#text {
+#version_text {
     font-size: 13px;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -107,14 +107,14 @@ body {
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-family: 'Helvetica Neue';
-    left: 228px;
     padding: 2px;
+    left: 217px;
     right: 22px;
     width: auto;
     bottom: 206px;
     height: auto;
 }
 
-.selected #text {
+.selected #version_text {
     color: white;
 }
