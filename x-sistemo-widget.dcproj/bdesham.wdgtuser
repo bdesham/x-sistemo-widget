@@ -19,7 +19,7 @@
 		</array>
 	</dict>
 	<key>ContentViewType</key>
-	<integer>0</integer>
+	<integer>5</integer>
 	<key>DeploymentOptions</key>
 	<dict>
 		<key>Destination</key>
@@ -33,7 +33,7 @@
 		<key>SavePath</key>
 		<string>/Users/bdesham/Sites/x-sistemo-widget</string>
 		<key>WidgetDeployName</key>
-		<string>x-sistemo.dcproj</string>
+		<string>x-sistemo</string>
 		<key>enableSimulation</key>
 		<true/>
 		<key>simulatedHost</key>
@@ -86,9 +86,7 @@
 		<key>Objects view last selections</key>
 		<array>
 			<array>
-				<integer>0</integer>
-				<integer>0</integer>
-				<integer>5</integer>
+				<integer>9223372036854775807</integer>
 			</array>
 		</array>
 		<key>Opened Steps</key>

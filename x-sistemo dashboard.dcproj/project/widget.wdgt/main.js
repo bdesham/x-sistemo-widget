@@ -160,3 +160,10 @@ function xsistemoClickHandler(event)
     
     return;
 }
+
+
+function visitWebsite(event)
+{
+    widget.openURL("https://github.com/bdesham/x-sistemo-widget");
+    return;
+}

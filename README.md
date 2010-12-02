@@ -16,9 +16,15 @@ The widget is very dumb about the input text.  *All* instances of “cx”, “u
 
 The widget ignores whether the “x” is uppercase or lowercase, so that “cx” and “cX” both become “ĉ”, while “Cx” and “CX” both become “Ĉ”.
 
+Click on the star or version number at the top of the widget to visit x-sistemo’s GitHub project page.
+
 ## Development
 
 This widget was developed by [Benjamin Esham](mailto:bdesham@gmail.com) using Dashcode.  E-mail him with bug reports, feature suggestions, or patches.
+
+### Version history
+
+* 1.0: Initial release.
 
 ## License
 

@@ -95,3 +95,26 @@ body {
     height: auto;
     text-shadow: rgb(223, 223, 223) 1px 1px 2px;
 }
+
+#text {
+    font-size: 13px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    margin-top: 0px;
+    top: 25px;
+    text-align: right;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: 'Helvetica Neue';
+    left: 228px;
+    padding: 2px;
+    right: 22px;
+    width: auto;
+    bottom: 206px;
+    height: auto;
+}
+
+.selected #text {
+    color: white;
+}
