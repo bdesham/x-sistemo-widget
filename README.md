@@ -8,4 +8,5 @@ This is a simple Dashboard widget to convert Esperanto text between the X-system
 
 ## Notes
 
-* The widget is very dumb about the input text.  If you happen to put in something other than Esperanto text, and it contains “cx”, “ux”, or the like, then those letter combinations will be converted to “ĉ”, “ŭ”, etc.  This might mess up web addresses, for example.
+* The widget is very dumb about the input text.  *All* instances of “cx”, “ux”, and the like will be converted to “ĉ”, “ŭ”, etc.  This might mess up, say, web addresses or French text.
+* The widget ignores whether the “x” is uppercase or lowercase, so that “cx” and “cX” both become “ĉ”, while “Cx” and “CX” both become “Ĉ”.
