@@ -56,7 +56,7 @@
 				</dict>
 				<dict>
 					<key>Completed</key>
-					<false/>
+					<true/>
 					<key>Detail</key>
 					<string>Custom_Step_4_Detail</string>
 					<key>MainHelp</key>

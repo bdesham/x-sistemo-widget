@@ -31,7 +31,7 @@
 		<key>Save</key>
 		<true/>
 		<key>SavePath</key>
-		<string>/Users/bdesham/Sites/x-sistemo dashboard</string>
+		<string>/Users/bdesham/Sites/x-sistemo-widget</string>
 		<key>WidgetDeployName</key>
 		<string>x-sistemo.dcproj</string>
 		<key>enableSimulation</key>
@@ -91,11 +91,8 @@
 		</array>
 		<key>Opened Steps</key>
 		<array>
-			<integer>0</integer>
-			<integer>1</integer>
-			<integer>2</integer>
-			<integer>3</integer>
 			<integer>4</integer>
+			<integer>5</integer>
 		</array>
 		<key>Visible StackLayout Views</key>
 		<array>
