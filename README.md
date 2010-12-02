@@ -4,7 +4,7 @@ This is a simple Dashboard widget to convert Esperanto text between the X-system
 
 ## How to install
 
-**Getting the file:** From [the GitHub project page](https://github.com/bdesham/x-sistemo-widget) click on the “Downloads” button and then on the “Download .zip” button.  Unzip this file.
+**Getting the file:** From [the GitHub project page](https://github.com/bdesham/x-sistemo-widget) click on the “Downloads” button and then on the “Download .zip” button.  Unzip the resulting file.
 
 **Installing the widget:** Open the “bdesham-x-sistemo-widget-…” folder and double-click on “x-sistemo.wdgt”.  You will be prompted to install the widget, and then you can move it to wherever you want on your dashboard.
 
@@ -18,7 +18,7 @@ The widget ignores whether the “x” is uppercase or lowercase, so that “cx�
 
 ## Development
 
-This widget was developed by Benjamin Esham (<bdesham@gmail.com>) using Dashcode.  E-mail him with bug reports, feature suggestions, or patches.
+This widget was developed by [Benjamin Esham](mailto:bdesham@gmail.com) using Dashcode.  E-mail him with bug reports, feature suggestions, or patches.
 
 ## License
 
