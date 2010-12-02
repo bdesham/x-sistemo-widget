@@ -24,6 +24,7 @@ This widget was developed by [Benjamin Esham](mailto:bdesham@gmail.com) using Da
 
 ### Version history
 
+* 1.0.1: Added an icon.
 * 1.0: Initial release.
 
 ## License
