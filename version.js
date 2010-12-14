@@ -1,4 +1,4 @@
 {
-	"current_version": "1.0.3",
-	"current_version_url": "null"
+	"current_version_major": 1,
+	"current_version_minor": 1
 }
