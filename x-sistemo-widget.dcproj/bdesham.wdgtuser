@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CYLastWindowPosition</key>
-	<string>{753, 287}</string>
+	<string>{872, 594}</string>
 	<key>ContentSplitViewGeometry</key>
 	<dict>
 		<key>ContentSplitViewConfig</key>
@@ -14,8 +14,8 @@
 		<integer>0</integer>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {758, 490}}</string>
-			<string>{{0, 500}, {758, 284}}</string>
+			<string>{{0, 0}, {758, 311}}</string>
+			<string>{{0, 321}, {758, 463}}</string>
 		</array>
 	</dict>
 	<key>ContentViewType</key>
@@ -52,11 +52,11 @@
 		</array>
 	</dict>
 	<key>MainWindowFrame</key>
-	<string>285 153 1003 826 0 0 1680 1028 </string>
+	<string>307 168 1003 826 0 0 1680 1028 </string>
 	<key>NavigatorSplitViewGeometry</key>
 	<dict>
 		<key>ContentSplitViewConfig</key>
-		<integer>9</integer>
+		<integer>5</integer>
 		<key>SplitViewConfig</key>
 		<integer>3</integer>
 		<key>_indexOfCollapsedView</key>

@@ -11,6 +11,8 @@
 function load()
 {
     dashcode.setupParts();
+    document.getElementById('version_text').style.visibility = "hidden";
+    checkForUpdates();
 }
 
 //
@@ -19,9 +21,6 @@ function load()
 //
 function remove()
 {
-    // Stop any timers to prevent CPU usage
-    // Remove any preferences as needed
-    // widget.setPreferenceForKey(null, dashcode.createInstancePreferenceKey("your-key"));
 }
 
 //
@@ -30,7 +29,6 @@ function remove()
 //
 function hide()
 {
-    // Stop any timers to prevent CPU usage
 }
 
 //
@@ -39,7 +37,6 @@ function hide()
 //
 function show()
 {
-    // Restart any timers that were stopped on hide
 }
 
 //
@@ -48,58 +45,6 @@ function show()
 //
 function sync()
 {
-    // Retrieve any preference values that you need to be synchronized here
-    // Use this for an instance key's value:
-    // instancePreferenceValue = widget.preferenceForKey(null, dashcode.createInstancePreferenceKey("your-key"));
-    //
-    // Or this for global key's value:
-    // globalPreferenceValue = widget.preferenceForKey(null, "your-key");
-}
-
-//
-// Function: showBack(event)
-// Called when the info button is clicked to show the back of the widget
-//
-// event: onClick event from the info button
-//
-function showBack(event)
-{
-    var front = document.getElementById("front");
-    var back = document.getElementById("back");
-
-    if (window.widget) {
-        widget.prepareForTransition("ToBack");
-    }
-
-    front.style.display = "none";
-    back.style.display = "block";
-
-    if (window.widget) {
-        setTimeout('widget.performTransition();', 0);
-    }
-}
-
-//
-// Function: showFront(event)
-// Called when the done button is clicked from the back of the widget
-//
-// event: onClick event from the done button
-//
-function showFront(event)
-{
-    var front = document.getElementById("front");
-    var back = document.getElementById("back");
-
-    if (window.widget) {
-        widget.prepareForTransition("ToFront");
-    }
-
-    front.style.display="block";
-    back.style.display="none";
-
-    if (window.widget) {
-        setTimeout('widget.performTransition();', 0);
-    }
 }
 
 if (window.widget) {
@@ -109,6 +54,12 @@ if (window.widget) {
     widget.onsync = sync;
 }
 
+/*
+ * begin the actual x-sistemo-widget code
+ */
+
+var current_version_major = 1;
+var current_version_minor = 1;
 
 function unikodoClickHandler(event)
 {
@@ -127,9 +78,7 @@ function unikodoClickHandler(event)
 	text = text.replace(/J[Xx]([^Xx]|$)/g, "Ĵ$1");
 	text = text.replace(/S[Xx]([^Xx]|$)/g, "Ŝ$1");
 	text = text.replace(/U[Xx]([^Xx]|$)/g, "Ŭ$1");
-	
-	text = text.replace("xx", "x");
-    
+	    
     document.getElementById('the_text').value = text;
     
     return;
@@ -139,9 +88,7 @@ function unikodoClickHandler(event)
 function xsistemoClickHandler(event)
 {
     var text = document.getElementById('the_text').value;
-    
-//    text = text.replace("x", "xx");
-    
+        
 	text = text.replace(/ĉ/g, "cx");
 	text = text.replace(/ĝ/g, "gx");
 	text = text.replace(/ĥ/g, "hx");
@@ -161,9 +108,39 @@ function xsistemoClickHandler(event)
     return;
 }
 
-
 function visitWebsite(event)
 {
     widget.openURL("https://github.com/bdesham/x-sistemo-widget");
+	return;
+}
+
+function checkForUpdates()
+{
+    var request = new XMLHttpRequest();
+	url = "https://github.com/bdesham/x-sistemo-widget/raw/master/version.js";
+
+	request.onreadystatechange = function()
+    {
+		if (request.readyState != 4)
+            return;
+        
+        var data = JSON.parse(request.responseText);
+    
+        var major = data.latest_version_major;
+        var minor = data.latest_version_minor;
+        
+        if ((major > current_version_major) ||
+                ((major == current_version_major) && (minor > current_version_minor))) {
+            //alert('New version available: ' + major + '.' + minor);
+            document.getElementById('version_text').style.visibility = "visible";
+        } else {
+            //alert('We have the newest version: ' + major + '.' + minor);
+            document.getElementById('version_text').style.visibility = "hidden";
+        }
+	};
+
+	request.open('GET', url, true);
+	request.send(); 
+
     return;
 }

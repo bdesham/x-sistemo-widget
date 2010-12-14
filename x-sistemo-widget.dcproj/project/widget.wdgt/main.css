@@ -26,7 +26,6 @@ body {
 #star_text {
     position: absolute;
     font-family: HelveticaNeue-Bold;
-    width: 93px;
     font-size: 14pt;
     text-align: center;
     top: 20px;
@@ -36,9 +35,10 @@ body {
     border-bottom-right-radius: 0px 0px;
     text-shadow: none;
     color: rgb(255, 255, 255);
-    right: 201px;
+    width: 46px;
+    right: 118px;
     margin-left: auto;
-    left: 94px;
+    left: 118px;
     margin-right: auto;
     height: auto;
 }
@@ -61,7 +61,6 @@ body {
 }
 
 #al_unikodo_button {
-    font-family: HelveticaNeue-Bold;
     text-align: center;
     cursor: default;
     -khtml-user-select: none;
@@ -76,10 +75,11 @@ body {
     bottom: 26px;
     height: auto;
     text-shadow: rgb(223, 223, 223) 1px 1px 2px;
+    font-weight: bold;
+    font-family: 'Lucida Grande';
 }
 
 #al_xsistemo_button {
-    font-family: HelveticaNeue-Bold;
     text-align: center;
     cursor: default;
     -khtml-user-select: none;
@@ -94,25 +94,28 @@ body {
     bottom: 26px;
     height: auto;
     text-shadow: rgb(223, 223, 223) 1px 1px 2px;
+    font-weight: bold;
+    font-family: 'Lucida Grande';
 }
 
 #version_text {
-    font-size: 13px;
     text-overflow: ellipsis;
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
-    top: 25px;
-    text-align: right;
-    color: rgb(255, 255, 255);
     font-weight: bold;
-    font-family: 'Helvetica Neue';
     padding: 2px;
-    left: 217px;
+    color: rgb(255, 255, 0);
+    font-family: 'Lucida Grande';
+    font-size: 11px;
+    text-align: center;
+    top: 18px;
+    left: 214px;
     right: 22px;
     width: auto;
-    bottom: 206px;
+    bottom: 204px;
     height: auto;
+    text-shadow: rgb(32, 109, 0) 1px 1px 1px;
 }
 
 .selected #version_text {
