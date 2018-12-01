@@ -2,7 +2,7 @@
 
 This is a simple Dashboard widget to convert Esperanto text between the X-system (“sxati”) and Unicode (“ŝati”). It consists of a text area and two buttons… one converts all text to the X-system and the other converts all text to Unicode.
 
-Much like Dashboard itself, **this widget is no longer being developed or supported.**
+⚠️ **Notice:** This project is no longer maintained. It may have severe security or compatibility problems. Use it at your own risk!
 
 ## How to install
 
@@ -22,7 +22,7 @@ Click on the star at the top of the widget to visit x-sistemo’s GitHub project
 
 This widget was created by [Benjamin Esham](https://esham.io).
 
-This project is [hosted on GitHub](https://github.com/bdesham/x-sistemo-widget).
+This project is [hosted on GitHub](https://github.com/bdesham/x-sistemo-widget). It is **no longer being developed** and is left on GitHub only in the hope that someone will find the code interesting or useful.
 
 ## Version history
 
